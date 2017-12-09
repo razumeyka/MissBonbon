@@ -1,5 +1,56 @@
-body { 
-    max-width: 700px;
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+h1,h2 {
+    text-align: center
+}
+
+body {
+    max-width: 900px;
     margin: 0 auto;
-    background-color: #F9F253;
-}    
+    background-color: #F3DD58;
+    font-family:Philosopher, cursive;
+}
+
+header {
+    background-image: url("../img/taste.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu {
+    padding-right: 10px;
+}
+
+#about {
+    position: relative;
+}
+
+#portfolio {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tasty-stories {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#traditional {
+    grid-area: 1/1;
+}
+#chocolate {
+    grid-area: 2/1;
+}
+#macaron {
+    grid-area: 1/2;
+}
+#trufels {
+    grid-area: 2/2;
+}
+
+    
