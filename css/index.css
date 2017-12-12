@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Philosopher');
-h1,h2 {
-    text-align: center
-}
+h1,h2,h3 
 
 body {
     max-width: 900px;
     margin: 0 auto;
     background-color: #F3DD58;
     font-family:Philosopher, cursive;
+    font-size: 16px;
 }
 
 header {
@@ -16,7 +15,7 @@ header {
     background-size: cover;
     height: 450px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .menu {
@@ -25,6 +24,10 @@ header {
 
 #about {
     position: relative;
+}
+
+.me {
+    margin: 2px 2px 2px 2px;
 }
 
 #portfolio {
@@ -37,24 +40,15 @@ header {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-#traditional {
-    grid-area: 1/1;
-}
-#chocolate {
-    grid-area: 2/1;
-}
-#macaron {
-    grid-area: 1/2;
-}
-#trufels {
-    grid-area: 2/2;
 }
 
 footer {
     background-color: #555449;
+    background-position: center center;
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
     
