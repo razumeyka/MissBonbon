@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Philosopher');
-h1,h2,h3 
 
 body {
     max-width: 900px;
@@ -16,6 +15,10 @@ header {
     height: 450px;
     display: flex;
     justify-content: space-between;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
 
 .menu {
