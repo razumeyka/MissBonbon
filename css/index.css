@@ -13,24 +13,34 @@ header {
     background-position: center center;
     background-size: cover;
     height: 450px;
+}
+
+.menu, footer {
+    background: rgba(128,128,128,0.75);
+    background-position: center center;
+    background-size: cover;
+    height: 100px;
+    width: 900px;
     display: flex;
     justify-content: space-between;
+}
+
+header a, footer a { 
+    color: #F3DD58;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 h1, h2, h3 {
     text-align: center;
 }
 
-.menu {
-    padding-right: 10px;
-}
-
-#about {
-    position: relative;
-}
-
 .me {
-    margin: 2px 2px 2px 2px;
+    width: 210px;
+    height: 250px;
+    float: left;
+    margin: 0px 10px 0px 0px;
 }
 
 #portfolio {
@@ -45,13 +55,31 @@ h1, h2, h3 {
     grid-template-columns: 1fr 1fr;
 }
 
-footer {
-    background-color: #555449;
+.traditional, .chocolate, .trufels, .macaron   {
+    float: left;
+    margin: 10px 10px 10px 10px;
+    background: rgba(245,242,143,1);
+    padding: 10px 10px 10px 10px;
+}
+
+#about, #portfolio, .tasty-stories, #contacts {
+    background: rgba(245,242,143,1);
     background-position: center center;
     background-size: cover;
-    height: 100px;
+    margin: 10px 10px 10px 10px;
+}
+
+.noborder {
+    border: 0;
+    width: 900px;
+    height: 400px;
+}
+
+#contact-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
     
