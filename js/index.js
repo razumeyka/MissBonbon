@@ -20,3 +20,4 @@ function sendForm(ev) {
          .fail( () => $('#error-dialog').attr('open', 'open') );    
     }
 }
+
