@@ -86,7 +86,9 @@
         <img class="macaron" src="img/macarons.png" width="400" height="200" alt="макаронс">
         <p>История гласит, что макарон, несмотря на неимоверную популярность у французов, был впервые создан примерно в 1533 году в Италии шеф-поваром Екатерины Медичи, слывшей большой сластёной. Позднее, став женой французского короля, она перевезла свою
           маленькую «итальянскую» слабость во Францию.</p>
-        <a href='macaron.html'>Читать полностью</a>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#macaronsHistory">
+          Читать полностью
+        </button>
       </article>
       <article id="trufels">
         <h2>Как приготовить трюфели в домашних условиях</h2>
@@ -136,10 +138,34 @@
     <a href="https://www.instagram.com/anastasiya.razumeyko"><img src="img/instagram.png" class="instagram" alt="инстаграм"></a>
     <a href="https://vk.com/miss.bonbon"><img src="img/vk.png" class="vk" alt="вконтакте"></a>
   </footer>
+
+  <div class="modal fade" id="macaronsHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2>История макаронc</h2>
+          <p>История гласит, что макарон, несмотря на неимоверную популярность у французов, был впервые создан примерно в 1533 году в Италии шеф-поваром Екатерины Медичи, слывшей большой сластёной. Позднее, став женой французского короля, она перевезла свою
+            маленькую «итальянскую» слабость во Францию.</p>
+          <p>Независимо от того, кто первым изобрёл эти печенья, во Франции они начали распространяться к концу 18 века благодаря двум бенедиктинским монахиням, которые пекли и продавали их исключительно с целью заработка на собственное пропитание. Воспользовавшись
+            растущим спросом на макарон, вслед за монахинями их начали массово продавать и уличные парижские торговцы.</p>
+          <p>Современный же облик макарон приобрели только в начале 20-го века, когда Пьера Дефонтейна, внука основателя известнейшей кондитерской Ladurée, посетила кулинарная муза, и он соединил два печенья в одно с помощью крема ганаш. Печенье трансформировалось
+            в пирожное, получившее название ‘le macaron parisien’ (парижский макарон). Это лакомство сразу же стало «бестселлером» кондитерской сети Ladurée.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
-</body>
-
 </html>
