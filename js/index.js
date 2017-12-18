@@ -1,5 +1,5 @@
 $(function(){
-   $('#contact-form input[type=submit]').click(sendForm); 
+   $('#contact-form button[type=button]').click(sendForm); 
 });
 
 function sendForm(ev) {

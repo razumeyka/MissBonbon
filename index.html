@@ -11,6 +11,7 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
   <title>Miss Bonbon</title>
 </head>
@@ -28,7 +29,7 @@
   </header>
   <main>
     <div id="about">
-      <img class="me" src="img/nazar27.jpg" alt="назар27">
+      <img class="me" src="img/nazar27.jpg" alt="Торт на 27 лет">
       <h1>Обо мне</h1>
       <p> Привет! Меня зовут Анастасия и я влюблена в кондитерское искусство ;)</p>
       <p> Страсть к выпечке зародилась в студенческие годы, когда мы с подружкой, несмотря на загруженные с утра до позднего вечера дни учебой и работой, находили время и силы по ночам пробовать и пробовать новые рецепты. Далее увлечение переросло в выпечку
@@ -43,19 +44,19 @@
         <a href="cakes.html">
           <h3>Торты</h3>
         </a>
-        <a href="cakes.html"><img src="img/medovik.jpg" width="200" height="250" alt="медовик"></a>
+        <a href="cakes.html"><img src="img/medovik.jpg"  class="cakes" alt="медовик"></a>
       </article>
       <article id="cupcakes">
         <a href="cup-cakes.html">
           <h3>Капкейки</h3>
         </a>
-        <a href="cup-cakes.html"><img src="img/cupcakes-ng.jpg" width="200" height="250" alt="кексы"></a>
+        <a href="cup-cakes.html"><img src="img/cupcakes-ng.jpg" class="cupcakes" alt="кексы"></a>
       </article>
       <article id="macarons">
         <a href="macarons.html">
           <h3>Макаронс</h3>
         </a>
-        <a href="macarons.html"><img src="img/macaronki.jpg" width="200" height="250" alt="макаронс"></a>
+        <a href="macarons.html"><img src="img/macaronki.jpg" class= "macarons" alt="макаронс"></a>
       </article>
     </div>
     </div>
@@ -99,21 +100,18 @@
     <div id="contacts">
       <h2>Связаться со мной:</h2>
       <form id="contact-form">
-        <label> Имя:
-    <input type="text" id="name" required>
-    </label>
+        <label> 
+           <input type="text" name="name" id="name" placeholder="Имя" required>
+        </label>
         <br>
+        <label> 
+           <input type="text" name="email" id="email" placeholder="Email" required>
+        </label>
         <br>
-        <label> Email:
-    <input type="text" id="email" required>
-    </label>
-        <br>
-        <br>
-        <label> Сообщение:
-    <textarea id="message"></textarea>
-    </label>
-        <br>
-        <input type="submit">
+        <label> 
+           <textarea id="message" placeholder="Ваше сообщение"></textarea>
+        </label>
+        <button type="button" class="btn btn-secondary">Отправить</button>
       </form>
       <dialog id="thank-dialog">
         <p> Спасибо за обращение, я отвечу Вам в самое ближайшее время!</p>
@@ -129,12 +127,17 @@
   <footer>
     <nav>
       <a href="index.html">Главная</a>
-      <a href="about.html">Обо мне</a>
+      <a href="#about">Обо мне</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#traditional">Интересное</a>
+      <a href="#contacts">Контакты</a>
     </nav>
-    <a href="https://www.facebook.com/profile.php?id=100010405955834"><img src="img/facebook.png" width="60" height="60" alt="facebook"></a>
-    <a href="https://www.instagram.com/anastasiya.razumeyko"><img src="img/instagram.jpg" width="80" height="80" alt="instagram"></a>
-    <a href="https://vk.com/miss.bonbon"><img src="img/vk.png" width="60" height="60" alt="vk"></a>
+    <a href="https://www.facebook.com/profile.php?id=100010405955834"><img src="img/facebook.png" class="facebook" alt="фейсбук"></a>
+    <a href="https://www.instagram.com/anastasiya.razumeyko"><img src="img/instagram.png" class="instagram" alt="инстаграм"></a>
+    <a href="https://vk.com/miss.bonbon"><img src="img/vk.png" class="vk" alt="вконтакте"></a>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
 </body>
