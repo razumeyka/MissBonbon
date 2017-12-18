@@ -57,7 +57,6 @@ h1, h2, h3 {
 
 .traditional, .chocolate, .trufels, .macaron   {
     float: left;
-    margin: 10px 10px 10px 10px;
     background: rgba(245,242,143,1);
     padding: 10px 10px 10px 10px;
 }
@@ -66,12 +65,11 @@ h1, h2, h3 {
     background: rgba(245,242,143,1);
     background-position: center center;
     background-size: cover;
-    margin: 10px 10px 10px 10px;
 }
 
 .noborder {
     border: 0;
-    width: 900px;
+    width: 100%;
     height: 400px;
 }
 
