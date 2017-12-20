@@ -8,8 +8,8 @@ body {
     font-size: 15px;
 }
 
-header footer {
-    background: rgba(128,128,128,1);
+.menu, footer {
+    background-color: grey;
     background-position: center center;
     background-size: cover;
     height: 100px;
@@ -18,9 +18,32 @@ header footer {
     justify-content: space-between;
 }
 
-header a, footer a { 
+header nav a, footer a { 
     color: #F3DD58;
     font-size: 18px;
     margin-top: 20px;
     margin-right: 20px;
+}
+
+footer {
+    background-color: grey;
+    background-position: center center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+footer nav a { 
+    color: #F3DD58;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
 }
