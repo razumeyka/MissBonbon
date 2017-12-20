@@ -80,7 +80,7 @@ p {
 }
 
 .countries {
-    width: 100px;
+    width: 300px;
 }
 
 .noborder {
@@ -113,9 +113,10 @@ footer {
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    text-align: center
 }
+
 footer nav a { 
     color: #F3DD58;
     font-size: 18px;
@@ -124,10 +125,17 @@ footer nav a {
 
 .facebook, .insta, .vk {
     width: 50px;
+    height: 50px;
 }
 
 dialog {
     margin-top: -150px;
+}
+
+@media (max-width: 700px;) {
+    main {
+        display: block;
+    }
 }
 
     
