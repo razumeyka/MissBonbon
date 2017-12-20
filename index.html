@@ -69,7 +69,9 @@
           <li>Пахлава, Турция</li>
         </ul>
         <p>Пахлава — это визитная карточка Востока. Готовят ее из слоеного теста. Каждый слой десерта промазывают маслом и медом, а также присыпают орехами.</p>
-        <a href='traditional.html'>Читать полностью</a>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#traditionalDeserts">
+          Читать полностью
+        </button>
       </article>
       <article id="chocolate">
         <h2>5 малоизвестных фактов о шоколаде</h2>
@@ -79,7 +81,9 @@
         </ol>
         <p>По стандартам США, в молочном шоколаде должно содержаться всего лишь около десяти процентов тёртого какао, в то время как в полусладком шоколаде, содержание тёртого какао должно быть не менее тридцати пяти процентов. Молочный шоколад, который
           изготавливается по немного другим правилам, должен содержать не менее двадцати процентов какао-масла.</p>
-        <a href='chocolate.html'>Читать полностью</a>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#chocolateFacts">
+          Читать полностью
+        </button>
       </article>
       <article id="macaron">
         <h2>История макаронc</h2>
@@ -95,7 +99,9 @@
         <img class="trufels" src="img/trufel.png" width="200" height="250" alt="трюфели">
         <p>Трюфели – одни из самых известных конфет в мире. Их родина – Франция, а свое название они получили по внешнему сходству с грибом элитного сорта – трюфелем. Первоначально это лакомство имело форму неровных шариков, а привычную нам куполообразную
           форму приобрело позднее. Эти конфеты легко приготовить дома – домашние трюфели ничуть не хуже, а может, даже лучше магазинных.</p>
-        <a href='trufels.html'>Читать полностью</a>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#cookTrufels">
+          Читать полностью
+        </button>
       </article>
     </div>
 
@@ -115,12 +121,12 @@
         </label>
         <button type="button" class="btn btn-secondary">Отправить</button>
       </form>
-      <dialog id="thank-dialog">
+      <!-- <dialog id="thank-dialog">
         <p> Спасибо за обращение, я отвечу Вам в самое ближайшее время!</p>
       </dialog>
       <dialog id="error-dialog">
         <p> Ошибка, Ваше сообщение не отправлено!</p>
-      </dialog>
+      </dialog> -->
       <iframe class="noborder" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.67101507925!2d23.942195641624707!3d49.832667949161596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1sru!2sua!4v1512375266554"
         width="600" height="450" style="border:0" allowfullscreen></iframe>
     </div>
@@ -134,22 +140,22 @@
       <a href="#traditional">Интересное</a>
       <a href="#contacts">Контакты</a>
     </nav>
-    <a href="https://www.facebook.com/profile.php?id=100010405955834"><img src="img/facebook.png" class="facebook" alt="фейсбук"></a>
-    <a href="https://www.instagram.com/anastasiya.razumeyko"><img src="img/instagram.png" class="instagram" alt="инстаграм"></a>
-    <a href="https://vk.com/miss.bonbon"><img src="img/vk.png" class="vk" alt="вконтакте"></a>
+    <a href="https://www.facebook.com/profile.php?id=100010405955834"><img class="facebook" src="img/facebook.png" alt="фейсбук"></a>
+    <a href="https://www.instagram.com/anastasiya.razumeyko"><img  class="insta" src="img/instagram.png" alt="инстаграм"></a>
+    <a href="https://vk.com/miss.bonbon"><img class="vk" src="img/vk.png" alt="вконтакте"></a>
   </footer>
 
+  <!-- modal macarons-->
   <div class="modal fade" id="macaronsHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">История макаронс</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <h2>История макаронc</h2>
           <p>История гласит, что макарон, несмотря на неимоверную популярность у французов, был впервые создан примерно в 1533 году в Италии шеф-поваром Екатерины Медичи, слывшей большой сластёной. Позднее, став женой французского короля, она перевезла свою
             маленькую «итальянскую» слабость во Францию.</p>
           <p>Независимо от того, кто первым изобрёл эти печенья, во Франции они начали распространяться к концу 18 века благодаря двум бенедиктинским монахиням, которые пекли и продавали их исключительно с целью заработка на собственное пропитание. Воспользовавшись
@@ -163,9 +169,135 @@
       </div>
     </div>
   </div>
+  <!-- modal traditional-->
+  <div class="modal fade" id="traditionalDeserts" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Традиционные десерты в разных странах</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Пикаронес, Перу</li>
+          </ul>
+          <p>Этими пряными пончиками любят лакомиться многие в Южной Америке, но именно в Перу они приобрели статус мегапопулярного десерта. Готовят их из тыквы или сладкого картофеля, а подают с медом или сиропом из тростникового сахара и цитрусовых.</p>
+          <img src="img/peru.jpg" class="countries" alt="peru">
+          <br>
+          <ul>
+            <li>Чуррос, Испания</li>
+          </ul>
+          <p>Самый любимый у испанцев десерт представляет собой простые палочки из заварного теста, обжаренные во фритюре. Едят их, обмакивая в горячий шоколад.</p>
+          <img src="img/churros.jpg" class="countries" alt="churros">
+          <br>
+          <ul>
+            <li>Вагаси, Япония</li>
+          </ul>
+          <p>Блюдо из бобовых, риса, каштанов, различных трав и чая. И хотя в Японии вагаси считаются национальным десертом, на вкус они совсем не сладкие.</p>
+          <img src="img/vagasi.jpg" class="countries" alt="vagasi">
+          <br>
+          <ul>
+            <li>Печенье Хангва, Корея</li>
+          </ul>
+          <p>Традиционное корейское угощение с зерном, медом, съедобными цветами и кореньями.</p>
+          <img src="img/hangva.jpg" class="countries" alt="hangva">
+          <br>
+          <ul>
+            <li>Пахлава, Турция</li>
+          </ul>
+          <p>Пахлава — это визитная карточка Востока. Готовят ее из слоеного теста. Каждый слой десерта промазывают маслом и медом, а также присыпают орехами.</p>
+          <img src="img/pahlava.jpg" class="countries" alt="pahlava">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- madal chocolate-->
+  <div class="modal fade" id="chocolateFacts" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">5 малоизвестных фактов о шоколаде</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <ol>
+                <li>В шоколадных изделиях мало настоящего шоколада</li>
+            </ol>
+            <p>По стандартам США, в молочном шоколаде должно содержаться всего лишь около десяти процентов тёртого какао, в то время как в полусладком шоколаде, содержание тёртого какао должно быть не менее тридцати пяти процентов. Молочный шоколад, который
+                изготавливается по немного другим правилам, должен содержать не менее двадцати процентов какао-масла.</p>
+            <br>
+            <ol>
+                <li>Молочный шоколад изобрели совсем недавно</li>
+            </ol>
+            <p>Первое европейское изобретение в сфере шоколада случилось в 18 веке и состояло в удалении около половины какао-масла. Оставшаяся часть дробилась и смешивалась с солями, чтобы смягчить горький вкус. Этот шоколад стал известен как голландский
+                какао (Dutch Cocoa). Молочный шоколад был открыт путём смешивания какао порошка с подслащённым сгущённым молоком. Этот рецепт был изобретён человеком по фамилии Nestle.</p>
+            <br>
+            <ol>
+                <li>Шоколад содержит лекарство под названием теобромин</li>
+            </ol>
+            <p>Теобромин похож на кофеин, но он оказывает более мягкий стимулирующий эффект. Предварительные исследования показали, что он также может быть использован в препаратах для подавления кашля. Хотя теобромин давно использовался в лечении проблем
+                с давлением и тестировался для использования в борьбе с раком, его можно употреблять только в умеренных количествах. Высокий уровень теобромина может вызвать отравление, хотя животные и пожилые люди в большей степени подвержены этому риску.
+                Здоровый человек должен будет съесть очень много шоколада для того, чтобы его здоровье оказалось в опасности.</p>
+            <br>
+            <ol>
+                <li>В мире нехватка шоколада</li>
+            </ol>
+            <p>Мир столкнулся с нехваткой шоколада в связи с серьёзными заболеваниями, которые влияют на деревья в Латинской Америке, где производится большая часть какао в мире. Помимо этого, спрос на шоколад постоянно растёт, что делает обеспечение людского
+                спроса на шоколад невероятно трудной задачей. К счастью, заболевания, которые влияют на производство шоколада, не распространились на Африку. Тем не менее, эти нехватки могут привести к росту розничных цен на шоколад, если фермеры не смогут
+                справиться с заболеваниями. Хотя деревья в Африке не страдают от болезней, там недавно были засухи, что ещё больше усложняет ситуацию.</p>
+            <br>
+            <ol>
+                <li>Какао выращивают рабы</li>
+            </ol>
+            <p>К сожалению, сластён придётся огорчить и заставить почувствовать себя виноватыми. Вы когда-нибудь задумывались над тем, откуда берётся шоколад? Большинство шоколада получают благодаря детскому труду. По подсчётам, только в Африке на шоколадных
+                фермах работает примерно 56–72 миллионов детей. Часто этих детей завлекают на работу на фермах обманным путём, а в некоторых случаях просто продают в рабство и им приходится до конца своих дней работать на этих фермах, и служить источником
+                обогащения других. Дети, которым повезло немного больше, живут на бананах и кукурузной каше. Ну а тех, кому удача не улыбнулась, часто порют как животных.</p>
+            <p>Один из таких детей рассказывал, что ему сказали, что он будет зарабатывать деньги и таким образом сможет помочь своей семье, однако единственным вознаграждением, на которое он может сейчас рассчитывать, это день без избиений цепью от велосипеда
+                или веткой дерева какао. Этот ребёнок никогда не пробовал тот продукт питания, за производством которого он проводит свою жизнь. Некоторые предлагают покупать только те продукты, которые маркированы организацией «Справедливая торговля»
+                (Fair Trade), однако усилия этой организации несоизмеримо малы, если их вообще можно заметить.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- madal trufels-->
+  <div class="modal fade" id="cookTrufels" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Как приготовить трюфели в домашних условиях</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+       <p>Трюфели – одни из самых известных конфет в мире. Их родина – Франция, а свое название они получили по внешнему сходству с грибом элитного сорта – трюфелем. Первоначально это лакомство имело форму неровных шариков, а привычную нам куполообразную
+          форму приобрело позднее. Эти конфеты легко приготовить дома – домашние трюфели ничуть не хуже, а может, даже лучше магазинных.</p>
+        <p>Рецепт трюфелей насчитывает десятки вариантов. Классические трюфели готовятся из шоколада, сливочного масла и сливок, затем обмакиваются в расплавленный темный шоколад и обваливаются в какао. На сегодняшний день основа приготовления этих конфет
+          мало чем отличается от традиционной.</p>
+        <p>Но начинкой может быть что угодно – миндаль, грецкий орех, чернослив, курага, имбирь, фрукты, кукурузные хлопья. Отличаются и варианты посыпки – кроме какао можно использовать вафельную крошку, кокосовую стружку, сахарную пудру. Встречаются даже
+          трюфели, обсыпанные со всех сторон перцем, паприкой и другими острыми приправами – они наверняка придутся по вкусу любителям острых ощущений.</p>
+        <iframe class="noborder" src="https://www.youtube.com/embed/PbgvMonjHGU" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>              
 </body>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  <script src="js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+
 </html>
