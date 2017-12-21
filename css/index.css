@@ -46,7 +46,7 @@ p {
     width: 210px;
     height: 250px;
     float: left;
-    margin: 0px 10px 0px 0px;
+    margin: 20px 10px 0px 20px;
 }
 
 #portfolio {
@@ -59,12 +59,17 @@ p {
 .cakes, .cupcakes, .macarons {
     width: 200px; 
     height: 250px;
+    margin-bottom: 20px;
 }
 
 .tasty-stories {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    border-width: 1px;
+    border-color: grey;
+    margin: 5px;
 }
 
 .traditional, .chocolate, .trufels, .macaron   {

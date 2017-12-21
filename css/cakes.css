@@ -25,6 +25,12 @@ header nav a, footer a {
     margin-right: 20px;
 }
 
+.cake {
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+}
+
 footer {
     background-color: grey;
     background-position: center center;
