@@ -93,6 +93,7 @@ p {
 
 .traditional, .chocolate, .trufels, .macaron   {
     float: left;
+    width: 200px;
 }
 
 #about, #portfolio, .tasty-stories, #contacts {
