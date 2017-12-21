@@ -56,6 +56,14 @@ p {
     text-align: center;
 }
 
+@media (max-width: 600px;) {
+    #portfolio {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
 .cakes, .cupcakes, .macarons {
     width: 200px; 
     height: 250px;
@@ -63,18 +71,28 @@ p {
 }
 
 .tasty-stories {
+    background-color: #F3DD58;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 700px;) {
+    .tasty-stories {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+#traditional, #chocolate, #trufels, #macaron   {
+    background: rgba(245,242,143,1);
     padding: 5px;
-    border-width: 1px;
-    border-color: grey;
+    border: 2px solid rgba(128,128,128,0.75);
     margin: 5px;
 }
 
 .traditional, .chocolate, .trufels, .macaron   {
     float: left;
-    background: rgba(245,242,143,1);
 }
 
 #about, #portfolio, .tasty-stories, #contacts {
@@ -138,10 +156,5 @@ footer nav a {
     height: 50px;
 }
 
-@media (max-width: 700px;) {
-    main {
-        display: block;
-    }
-}
 
     
