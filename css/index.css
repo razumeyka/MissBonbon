@@ -23,6 +23,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header a, footer a { 
@@ -60,7 +61,6 @@ p {
     #portfolio {
         display: grid;
         grid-template-columns: 1fr;
-        text-align: center;
     }
 }
 
@@ -96,7 +96,7 @@ p {
     width: 200px;
 }
 
-#about, #portfolio, .tasty-stories, #contacts {
+#about, #portfolio, #contacts {
     background: rgba(245,242,143,1);
     background-position: center center;
     background-size: cover;
@@ -142,7 +142,8 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 footer nav a { 
