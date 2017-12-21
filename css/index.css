@@ -57,7 +57,7 @@ p {
     text-align: center;
 }
 
-@media (max-width: 600px;) {
+@media (max-width: 600px) {
     #portfolio {
         display: grid;
         grid-template-columns: 1fr;
@@ -77,7 +77,7 @@ p {
     grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 700px;) {
+@media (max-width: 700px) {
     .tasty-stories {
         display: grid;
         grid-template-columns: 1fr;
@@ -96,7 +96,7 @@ p {
     width: 200px;
 }
 
-#about, #portfolio, #contacts {
+#about, #portfolio, .tasty-stories, #contacts {
     background: rgba(245,242,143,1);
     background-position: center center;
     background-size: cover;
