@@ -15,8 +15,14 @@ header {
     height: 450px;
 }
 
-.bg-secondary {
-    background: rgba(128,128,128,0.75);
+@media (max-width: 700px) {
+    header {
+          background-image: url("../img/taste-mobile.jpg");
+    }
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-secondary {
+    background: rgba(128,128,128,0.75) !important;
     background-position: center center;
     background-size: cover;
     height: 100px;
@@ -44,10 +50,16 @@ p {
 }
 
 .me {
-    width: 210px;
-    height: 250px;
+    width: 230px;
     float: left;
     margin: 20px 10px 0px 20px;
+}
+
+@media (max-width: 450px) {
+    .me {
+        width: 270px;
+        float: none;
+    }
 }
 
 #portfolio {
@@ -117,7 +129,7 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-	width: 450px;
+	width: 50%;
 	background: rgba(245,242,143,1);
 	margin: 0px auto;
 	padding-top: 20px;
@@ -125,10 +137,28 @@ p {
 	padding-left: 30px;
 }
 
-form input, form textarea {
+@media (max-width: 500px) {
+    #contact-form {
+        width: 100%;
+        padding-left: 5px;
+    }
+}
+
+form input {
     width: 420px;
     height: 30px;
 } 
+
+form textarea {
+    width: 420px;
+    height: 60px;
+} 
+
+@media (max-width: 500px) {
+    form input, form textarea {
+        width: 250px;;
+    }
+}
 
 dialog {
     margin-top: -150px;
@@ -144,6 +174,12 @@ footer {
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+    footer {
+        height: 130px;
+    }
 }
 
 footer nav a { 
